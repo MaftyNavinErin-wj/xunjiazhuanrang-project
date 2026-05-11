@@ -1,0 +1,33 @@
+# Raw data (do NOT publish - 含 Wind/CSC licensed 数据)
+Data/
+data/
+
+# Generated memos (含投资判断输出, 不公开)
+*.docx
+*询价转让投资备忘录.pdf
+*memo*.pdf
+data.json
+
+# Common ignores
+.DS_Store
+Thumbs.db
+*.tmp
+*.log
+*.swp
+node_modules/
+__pycache__/
+*.pyc
+.venv/
+venv/
+.env
+.env.local
+
+# IDE
+.vscode/
+.idea/
+
+# OpenCLI artifacts (本地工具状态)
+.opencli/
+
+# Claude Code 本地状态 (含 settings.local.json 等私有配置)
+.claude/
