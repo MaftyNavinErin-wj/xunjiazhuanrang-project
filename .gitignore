@@ -1,14 +1,41 @@
-# Raw data (do NOT publish - 含 Wind/CSC licensed 数据)
+# =============================================================
+# 询价转让备忘录项目 — gitignore
+# 原则: 模板/工作流文件追踪; 任何项目专用数据/分析/输出都不追踪
+# =============================================================
+
+# ----- 项目目录: 标的专用资产全部 ignored -----
+# 原始上传 (年报PDF/Wind Excel等, 含许可数据)
+projects/*/data/
+# 中间提取分析 (财务数据、舆情判断等)
+projects/*/extracts/
+# 项目专用脚本 (build_data.js 含 inline 财报数据)
+projects/*/build_data.js
+# 中间数据 (单一数据真相源)
+projects/*/data.json
+projects/*/*_extracted.json
+# 图表 (含标的股价/估值)
+projects/*/chart*.png
+projects/*/*.png
+# 输出物 (含投资判断, 不公开)
+projects/*/*.docx
+projects/*/*.pdf
+projects/*/*.html
+# Word 临时锁文件
+projects/*/~$*
+# 通用 (回落到所有项目目录的根级清理)
+projects/*/*.tmp
+projects/*/*.log
+
+# ----- 通用 raw data 兜底 (任何深度的 data/ 文件夹) -----
 Data/
 data/
 
-# Generated memos (含投资判断输出, 不公开)
-*.docx
-*询价转让投资备忘录.pdf
+# ----- 通用 memo 输出兜底 -----
+*询价转让投资备忘录.*
 *memo*.pdf
-data.json
+*memo*.docx
 
-# Common ignores
+# ----- 系统 / 工具 -----
 .DS_Store
 Thumbs.db
 *.tmp
@@ -26,8 +53,11 @@ venv/
 .vscode/
 .idea/
 
-# OpenCLI artifacts (本地工具状态)
+# OpenCLI artifacts
 .opencli/
 
 # Claude Code 本地状态 (含 settings.local.json 等私有配置)
 .claude/
+
+# package-lock.json 是否追踪由开发者决定; 默认追踪以保证可复现
+# (此行不操作, 仅说明)

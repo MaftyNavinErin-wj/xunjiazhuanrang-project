@@ -1,0 +1,28 @@
+{
+  "name": "xunjiazhuanrang-project",
+  "version": "1.0.0",
+  "description": "一个用 [Claude Code](https://claude.com/claude-code) 自动化生成 A 股**询价转让**投资备忘录的 workflow。",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MaftyNavinErin-wj/xunjiazhuanrang-project.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/MaftyNavinErin-wj/xunjiazhuanrang-project/issues"
+  },
+  "homepage": "https://github.com/MaftyNavinErin-wj/xunjiazhuanrang-project#readme",
+  "dependencies": {
+    "chart.js": "^4.5.1",
+    "chartjs-node-canvas": "^5.0.0",
+    "docx": "^9.6.1",
+    "exceljs": "^4.4.0",
+    "puppeteer": "^24.43.1"
+  }
+}
