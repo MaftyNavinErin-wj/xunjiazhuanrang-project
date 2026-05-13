@@ -8,8 +8,9 @@
 projects/*/data/
 # 中间提取分析 (财务数据、舆情判断等)
 projects/*/extracts/
-# 项目专用脚本 (build_data.js 含 inline 财报数据)
-projects/*/build_data.js
+projects/*/extracted/
+# 项目专用脚本 (build_*.js 含 inline 财报数据 / hardcode 项目措辞)
+projects/*/build_*.js
 # 中间数据 (单一数据真相源)
 projects/*/data.json
 projects/*/*_extracted.json
