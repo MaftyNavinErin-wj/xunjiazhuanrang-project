@@ -20,7 +20,13 @@ projects/*/*.png
 # 输出物 (含投资判断, 不公开)
 projects/*/*.docx
 projects/*/*.pdf
+projects/*/*.txt
 projects/*/*.html
+# Root-level project artifacts for batch comparison workflows
+projects/*.pdf
+projects/*.txt
+projects/*.docx
+projects/*.html
 # Word 临时锁文件
 projects/*/~$*
 # 通用 (回落到所有项目目录的根级清理)
